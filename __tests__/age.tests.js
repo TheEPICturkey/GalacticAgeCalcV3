@@ -48,3 +48,9 @@ describe ('EarthAge', () => {
   })
 })
 
+describe ('roudnTwoDecimal', () => {
+
+  test("should round inputted number to the nearest second decimal", () => {
+    expect(roundTwoDecimal(3.141592653589793238)).toEqual(3.14)
+  })
+})
