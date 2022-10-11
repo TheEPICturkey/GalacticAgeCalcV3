@@ -26,3 +26,8 @@ describe ('EarthAge', () => {
     const userAge = new EarthAge(25);
     expect(userAge.JupiterAge).toEqual(296.5);
   })
+
+  test("will display how many years left the user has on Mercury", () => {
+    const userAge = new EarthAge(25, 78.8);
+    expect(userAge.MercuryYearsLeft).toEqual(12.92);
+  })
