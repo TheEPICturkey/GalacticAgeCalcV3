@@ -14,7 +14,7 @@ describe ('EarthAge', () => {
 
   test("will display the users age in Venus Years", () => {
     const userAge = new EarthAge(25);
-    expect(userAge.VenusAge).toEqual(15.5);
+    expect(userAge.VenusAge).toEqual(15.50);
   })
 
   test("will display the users age in Mars Years", () => {
@@ -24,10 +24,17 @@ describe ('EarthAge', () => {
 
   test("will display the users age in Jupiter Years", () => {
     const userAge = new EarthAge(25);
-    expect(userAge.JupiterAge).toEqual(296.5);
+    expect(userAge.JupiterAge).toEqual(296.50);
   })
 
   test("will display how many years left the user has on Mercury", () => {
     const userAge = new EarthAge(25, 78.8);
     expect(userAge.MercuryYearsLeft).toEqual(12.92);
   })
+53.9
+  test("will display how many years left the user has on Venus", () => {
+    const userAge = new EarthAge(25, 78.9);
+    expect(userAge.VenusYearsLeft).toEqual(33.42);
+  })
+
+  
